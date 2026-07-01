@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Tracker med Local Storage</title>
+</head>
+<body>
+
+  <h1>Task Tracker</h1>
+
+  <form id="task-form">
+    <input
+      id="task-input"
+      type="text"
+      placeholder="Ny task"
+    >
+
+    <select id="priority-input">
+      <option value="low">Low</option>
+      <option value="medium" selected>Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <button type="submit">Add Task</button>
+  </form>
+
+  <h2>Mina tasks</h2>
+
+  <ul id="task-list"></ul>
+
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
